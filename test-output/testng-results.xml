@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T12:50:55 IST" name="Default suite" finished-at="2023-02-07T12:51:13 IST" duration-ms="18277">
+  <suite started-at="2023-02-07T15:37:00 IST" name="Default suite" finished-at="2023-02-07T15:37:08 IST" duration-ms="7570">
     <groups>
     </groups>
-    <test started-at="2023-02-07T12:50:55 IST" name="Default test" finished-at="2023-02-07T12:51:13 IST" duration-ms="18277">
-      <class name="com.mm.testcases.TC002_HomePageTest">
-        <test-method is-config="true" signature="login()[pri:0, instance:com.mm.testcases.TC002_HomePageTest@5a45133e]" started-at="2023-02-07T12:50:55 IST" name="login" finished-at="2023-02-07T12:51:02 IST" duration-ms="7293" status="PASS">
+    <test started-at="2023-02-07T15:37:00 IST" name="Default test" finished-at="2023-02-07T15:37:08 IST" duration-ms="7570">
+      <class name="com.mm.testcases.TC001_LoginTest">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.mm.testcases.TC001_LoginTest@534a5a98]" started-at="2023-02-07T15:37:00 IST" name="login" finished-at="2023-02-07T15:37:07 IST" duration-ms="6941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="clikingTest()[pri:0, instance:com.mm.testcases.TC002_HomePageTest@5a45133e]" started-at="2023-02-07T12:51:03 IST" name="clikingTest" finished-at="2023-02-07T12:51:13 IST" duration-ms="10566" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="loginTest2()[pri:1, instance:com.mm.testcases.TC001_LoginTest@534a5a98]" started-at="2023-02-07T15:37:07 IST" name="loginTest2" finished-at="2023-02-07T15:37:07 IST" duration-ms="232" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Instant Meetings')]"}
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [033fc2808ce986acbc0b46e391e0c02f, findElement {using=xpath, value=//a[contains(text(),'Instant Meetings')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sethy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52816/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 033fc2808ce986acbc0b46e391e0c02f]]>
+Command: [d665fa1fbf3c96528f9fc7210bfc3c54, clickElement {id=56aae32a-5795-411c-b3f2-c4c3ba2cba02}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sethy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d665fa1fbf3c96528f9fc7210bfc3c54)] -> link text: Forgot Password]
+Session ID: d665fa1fbf3c96528f9fc7210bfc3c54]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Instant Meetings')]"}
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [033fc2808ce986acbc0b46e391e0c02f, findElement {using=xpath, value=//a[contains(text(),'Instant Meetings')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sethy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52816/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 033fc2808ce986acbc0b46e391e0c02f
+Command: [d665fa1fbf3c96528f9fc7210bfc3c54, clickElement {id=56aae32a-5795-411c-b3f2-c4c3ba2cba02}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sethy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d665fa1fbf3c96528f9fc7210bfc3c54)] -> link text: Forgot Password]
+Session ID: d665fa1fbf3c96528f9fc7210bfc3c54
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,15 +48,16 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-at com.mm.pageobjects.InstantMeeting.getTitle(InstantMeeting.java:19)
-at com.mm.testcases.TC002_HomePageTest.clikingTest(TC002_HomePageTest.java:16)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.mm.pageobjects.LoginPage.clickForgotPassword(LoginPage.java:45)
+at com.mm.testcases.TC001_LoginTest.loginTest2(TC001_LoginTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,15 +88,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clikingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mm.testcases.TC002_HomePageTest@5a45133e]" started-at="2023-02-07T12:51:13 IST" name="tearDown" finished-at="2023-02-07T12:51:13 IST" duration-ms="356" status="PASS">
+        </test-method> <!-- loginTest2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mm.testcases.TC001_LoginTest@534a5a98]" started-at="2023-02-07T15:37:07 IST" name="tearDown" finished-at="2023-02-07T15:37:08 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.mm.testcases.TC002_HomePageTest -->
+      </class> <!-- com.mm.testcases.TC001_LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
