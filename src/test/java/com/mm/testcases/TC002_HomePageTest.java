@@ -12,7 +12,6 @@ public class TC002_HomePageTest extends TestBase {
 		HomePage HomeObj = new HomePage(driver);
 		
 		InstantMeeting insObj = HomeObj.clickInstantMeeting();
-		Thread.sleep(5000);
 		System.out.println(insObj.getTitle());
 		
 		
