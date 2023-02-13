@@ -96,7 +96,7 @@ public class HomePage extends TestBase {
 
 	}
 
-	public InstantMeeting clickInstantMeeting() throws InterruptedException {
+	public InstantMeeting clickInstantMeeting() {
 		instantMeeting.click();
 		if (driver.getCurrentUrl().equals(insUrl)) {
 			return new InstantMeeting();
