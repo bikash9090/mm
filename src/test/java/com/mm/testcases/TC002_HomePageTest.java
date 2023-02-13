@@ -10,11 +10,9 @@ public class TC002_HomePageTest extends TestBase {
 	@Test()
 	public void clikingTest() throws InterruptedException {
 		HomePage HomeObj = new HomePage(driver);
-		
+
 		InstantMeeting insObj = HomeObj.clickInstantMeeting();
 		System.out.println(insObj.getTitle());
-		
-		
 
 	}
 }

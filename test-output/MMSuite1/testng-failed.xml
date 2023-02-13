@@ -4,13 +4,13 @@
   <test thread-count="5" name="MM_Web_Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.mm.testcases.TC002_HomePageTest">
+      <class name="com.mm.testcases.TC002_HomePage">
         <methods>
           <include name="tearDown"/>
-          <include name="login"/>
           <include name="clikingTest"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.mm.testcases.TC002_HomePageTest -->
+      </class> <!-- com.mm.testcases.TC002_HomePage -->
     </classes>
   </test> <!-- MM_Web_Test(failed) -->
 </suite> <!-- Failed suite [MMSuite1] -->
